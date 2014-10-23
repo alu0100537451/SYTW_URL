@@ -119,13 +119,12 @@ PLATFORMS
 
 DEPENDENCIES
   data_mapper
-  dm-postgres-adapter
   dm-sqlite-adapter
   erubis
   haml
   omniauth
   omniauth-google-oauth2
-  pg
   pry
+  sinatra
   sinatra-contrib
   sqlite3
