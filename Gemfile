@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'data_mapper'
-gem 'sinatra-contrib'
 gem 'haml'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
