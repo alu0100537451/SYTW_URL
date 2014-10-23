@@ -1,23 +1,23 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'sinatra'
+#gem 'alphadecimal'
+gem 'data_mapper'
+gem 'sinatra-contrib'
+gem 'haml'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'pry'
 gem 'erubis'
-gem 'haml'
-gem 'data_mapper'
 
-group :development,:test do
-  gem 'sinatra-contrib'
-  gem 'sqlite3'
-  gem 'dm-sqlite-adapter'
-
-end
 
 group :production do
 	gem "pg"
 	gem "dm-postgres-adapter"
+	gem "sinatra-contrib"
+end
 
+group :development, :test do
+	gem "sqlite3"
+	gem "dm-sqlite-adapter"
 end
 
