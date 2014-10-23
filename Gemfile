@@ -11,7 +11,7 @@ gem 'sinatra'
 
 
 group :production do
-	gem "pg"
+	gem 'pg', '~> 0.17.1'
 	gem "dm-postgres-adapter"
 	gem "sinatra-contrib"
 end
