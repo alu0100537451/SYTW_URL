@@ -1,8 +1,11 @@
+require 'dm-core'
+require 'dm-migrations'
+
 class ShortenedUrl
   include DataMapper::Resource
 
   property :id, Serial
+  property :email, Text
   property :url, Text
-  property :url_corta, Text
-  property :usuario, Text
+  property :label, Text
 end
